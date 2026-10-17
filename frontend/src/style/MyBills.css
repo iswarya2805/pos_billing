@@ -1,0 +1,257 @@
+.my-bills-layout {
+    display: flex;
+    min-height: 100vh;
+    background: #f4f7fc;
+    color: #172554
+}
+
+.my-bills-main {
+    min-width: 0;
+    flex: 1;
+    padding: 32px
+}
+
+.my-bills-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: 22px;
+    padding: 18px 21px;
+    border: 1px solid #e5eaf3;
+    border-radius: 13px;
+    background: #fff
+}
+
+.my-bills-header h1 {
+    margin: 0 0 7px;
+    font-size: 27px
+}
+
+.my-bills-header p {
+    color: #64748b;
+    font-size: 13px
+}
+
+.my-bills-header>button,
+.my-bills-empty button {
+    padding: 10px 14px;
+    border: 0;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600
+}
+
+.my-bills-panel {
+    min-height: 180px;
+    padding: 22px;
+    border: 1px solid #e5eaf3;
+    border-radius: 12px;
+    background: #fff
+}
+
+.my-bills-table-wrap {
+    overflow-x: auto
+}
+
+.my-bills-table {
+    width: 100%;
+    min-width: 800px;
+    border-collapse: collapse;
+    text-align: left
+}
+
+.my-bills-table th {
+    padding: 12px 9px;
+    background: #f8fafc;
+    color: #64748b;
+    font-size: 10px;
+    white-space: nowrap
+}
+
+.my-bills-table td {
+    padding: 13px 9px;
+    border-bottom: 1px solid #edf0f5;
+    color: #334155;
+    font-size: 11px;
+    white-space: nowrap
+}
+
+.my-bills-view {
+    padding: 7px 10px;
+    border: 0;
+    border-radius: 6px;
+    background: #eff6ff;
+    color: #1d4ed8;
+    font-size: 10px
+}
+
+.my-bills-view:disabled {
+    opacity: .6
+}
+
+.my-bills-capitalize {
+    text-transform: capitalize
+}
+
+.my-bills-state,
+.my-bills-empty {
+    padding: 36px 12px;
+    color: #64748b;
+    text-align: center;
+    font-size: 13px
+}
+
+.my-bills-empty h2 {
+    margin: 0 0 7px;
+    color: #172554;
+    font-size: 18px
+}
+
+.my-bills-empty p {
+    margin-bottom: 15px
+}
+
+.my-bills-alert {
+    margin-bottom: 16px;
+    padding: 13px 15px;
+    border-radius: 8px;
+    background: #fef2f2;
+    color: #b91c1c;
+    font-size: 13px
+}
+
+.receipt-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    display: grid;
+    place-items: center;
+    padding: 16px;
+    background: #0f172a80
+}
+
+.receipt-card {
+    width: min(100%, 480px);
+    max-height: 90vh;
+    overflow: auto;
+    padding: 24px;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 20px 60px #0f172a33
+}
+
+.receipt-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px
+}
+
+.receipt-heading h2 {
+    margin: 0 0 5px;
+    font-size: 20px
+}
+
+.receipt-heading p,
+.receipt-meta,
+.receipt-payment {
+    color: #64748b;
+    font-size: 12px
+}
+
+.receipt-close {
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 7px;
+    background: #f1f5f9;
+    font-size: 20px
+}
+
+.receipt-meta {
+    padding: 12px 0;
+    border-bottom: 1px dashed #cbd5e1
+}
+
+.receipt-lines {
+    display: grid;
+    gap: 10px;
+    padding: 15px 0
+}
+
+.receipt-lines>div,
+.receipt-total {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    font-size: 12px
+}
+
+.receipt-total {
+    padding: 13px 0;
+    border-top: 1px solid #cbd5e1;
+    font-size: 14px
+}
+
+.receipt-print {
+    width: 100%;
+    margin-top: 15px;
+    padding: 11px;
+    border: 0;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #fff;
+    font-weight: 600
+}
+
+@media(max-width:750px) {
+    .my-bills-layout {
+        flex-direction: column
+    }
+
+    .my-bills-main {
+        padding: 20px 14px
+    }
+
+    .my-bills-header {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 16px
+    }
+
+    .my-bills-panel {
+        padding: 15px
+    }
+}
+
+@media print {
+    body * {
+        visibility: hidden
+    }
+
+    .receipt-card,
+    .receipt-card * {
+        visibility: visible
+    }
+
+    .receipt-backdrop {
+        position: absolute;
+        inset: 0;
+        padding: 0;
+        background: #fff
+    }
+
+    .receipt-card {
+        width: 100%;
+        max-height: none;
+        overflow: visible;
+        padding: 10px;
+        box-shadow: none
+    }
+
+    .no-print {
+        display: none !important
+    }
+}

@@ -1,0 +1,16 @@
+:is(.dashboard-header,.billing-header,.products-header,.inventory-header,.reports-header,.returns-header,.staff-header,.suppliers-header,.ledger-header){position:relative;padding:18px 21px;border:1px solid #e5eaf3;border-radius:13px;background:#fff;box-shadow:0 4px 16px #17255408}
+:is(.dashboard-header,.billing-header,.products-header,.inventory-header,.reports-header,.returns-header,.staff-header,.suppliers-header,.ledger-header) h1{letter-spacing:-.025em}
+:is(.dashboard-header,.billing-header,.products-header,.inventory-header,.reports-header,.returns-header,.staff-header,.suppliers-header,.ledger-header) p{line-height:1.5}
+:is(.dashboard-user,.billing-user,.products-user,.inventory-user,.reports-user,.returns-user,.staff-user,.suppliers-user,.ledger-user){padding:7px 10px 7px 7px;border:1px solid #eef2f7;border-radius:999px;background:#f8fafc}
+:is(.user-avatar,.dashboard-avatar,.billing-avatar,.products-avatar,.inventory-avatar,.reports-avatar,.returns-avatar,.staff-avatar,.suppliers-avatar,.ledger-avatar){flex-shrink:0;box-shadow:0 0 0 3px #fff}
+:is(.dashboard-user,.billing-user,.products-user,.inventory-user,.reports-user,.returns-user,.staff-user,.suppliers-user,.ledger-user) strong{white-space:nowrap}
+:is(.dashboard-user,.billing-user,.products-user,.inventory-user,.reports-user,.returns-user,.staff-user,.suppliers-user,.ledger-user) span{text-transform:capitalize}
+
+/* Shared top bar styles for a standalone application navbar. */
+.app-navbar{min-height:68px;padding:12px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px;border-bottom:1px solid #e5eaf3;background:#fff;color:#172554}
+.app-navbar__title{margin:0;font-size:18px;font-weight:700}
+.app-navbar__user{display:flex;align-items:center;gap:10px}
+.app-navbar__avatar{width:38px;height:38px;display:grid;place-items:center;border-radius:50%;background:#dbeafe;color:#1d4ed8;font-weight:700}
+.app-navbar__logout{padding:9px 12px;border:1px solid #dbe3ef;border-radius:7px;background:#fff;color:#334155}
+.app-navbar__logout:hover{background:#f8fafc}
+@media(max-width:700px){:is(.dashboard-header,.billing-header,.products-header,.inventory-header,.reports-header,.returns-header,.staff-header,.suppliers-header,.ledger-header){padding:15px;border-radius:10px}:is(.dashboard-user,.billing-user,.products-user,.inventory-user,.reports-user,.returns-user,.staff-user,.suppliers-user,.ledger-user){padding:5px 8px 5px 5px}.app-navbar{min-height:58px;padding:10px 14px;flex-wrap:wrap}}

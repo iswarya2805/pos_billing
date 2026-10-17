@@ -1,0 +1,395 @@
+.returns-layout {
+    display: flex;
+    min-height: 100vh;
+    background: #f4f7fc;
+    color: #172554
+}
+
+.returns-sidebar {
+    width: 255px;
+    min-height: 100vh;
+    padding: 25px 16px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    background: #172554;
+    color: #fff
+}
+
+.returns-brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 0 10px 32px
+}
+
+.returns-logo {
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    border-radius: 11px;
+    background: #3b82f6;
+    font-size: 22px;
+    font-weight: 700
+}
+
+.returns-brand h2 {
+    font-size: 23px;
+    color: #fff
+}
+
+.returns-brand h2 span {
+    color: #60a5fa
+}
+
+.returns-menu-label {
+    margin: 0 10px 14px;
+    color: #93a4c8;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px
+}
+
+.returns-nav {
+    display: grid;
+    gap: 7px
+}
+
+.returns-nav button,
+.returns-logout {
+    width: 100%;
+    padding: 13px 12px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: #cbd5e1;
+    text-align: left;
+    font-size: 13px
+}
+
+.returns-nav button:hover,
+.returns-nav button.active {
+    background: #2563eb;
+    color: #fff
+}
+
+.returns-logout {
+    margin-top: auto;
+    border: 1px solid #34456c;
+    color: #fff
+}
+
+.returns-main {
+    min-width: 0;
+    flex: 1;
+    padding: 32px
+}
+
+.returns-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 25px
+}
+
+.returns-header h1 {
+    margin-bottom: 8px;
+    font-size: 28px
+}
+
+.returns-header p,
+.returns-panel>p,
+.return-bill-heading p {
+    color: #64748b;
+    font-size: 13px
+}
+
+.returns-user {
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+.returns-avatar {
+    width: 43px;
+    height: 43px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #dbeafe;
+    color: #1d4ed8;
+    font-size: 19px;
+    font-weight: 700
+}
+
+.returns-user strong,
+.returns-user span {
+    display: block
+}
+
+.returns-user strong {
+    font-size: 13px
+}
+
+.returns-user span {
+    margin-top: 5px;
+    color: #64748b;
+    font-size: 11px
+}
+
+.returns-alert {
+    margin-bottom: 18px;
+    padding: 14px 16px;
+    border-radius: 8px;
+    font-size: 13px
+}
+
+.returns-alert.error,
+.return-inline-error {
+    background: #fef2f2;
+    color: #b91c1c
+}
+
+.returns-alert.success {
+    background: #f0fdf4;
+    color: #166534
+}
+
+.returns-panel {
+    margin-bottom: 20px;
+    padding: 23px;
+    border: 1px solid #e5eaf3;
+    border-radius: 13px;
+    background: #fff
+}
+
+.returns-panel h2 {
+    margin-bottom: 7px;
+    font-size: 18px
+}
+
+.bill-lookup {
+    display: flex;
+    gap: 10px;
+    margin-top: 17px
+}
+
+.bill-lookup input,
+.return-form-bottom input,
+.return-form-bottom select {
+    min-width: 0;
+    padding: 11px 12px;
+    border: 1px solid #dbe3ef;
+    border-radius: 7px;
+    color: #172554
+}
+
+.bill-lookup input {
+    flex: 1
+}
+
+.bill-lookup button,
+.return-form-bottom>button {
+    padding: 11px 16px;
+    border: 0;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600
+}
+
+.bill-lookup button:disabled,
+.return-form-bottom>button:disabled {
+    opacity: .6
+}
+
+.return-bill-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 18px
+}
+
+.bill-status {
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: capitalize
+}
+
+.bill-status.paid {
+    background: #dcfce7;
+    color: #166534
+}
+
+.bill-status.unpaid {
+    background: #fee2e2;
+    color: #b91c1c
+}
+
+.return-inline-error {
+    padding: 12px;
+    border-radius: 7px;
+    font-size: 12px
+}
+
+.returns-table-wrap {
+    width: 100%;
+    overflow-x: auto
+}
+
+.returns-table {
+    width: 100%;
+    min-width: 760px;
+    border-collapse: collapse;
+    text-align: left
+}
+
+.returns-table thead {
+    background: #f8fafc
+}
+
+.returns-table th {
+    padding: 12px 10px;
+    color: #64748b;
+    font-size: 11px;
+    white-space: nowrap
+}
+
+.returns-table td {
+    padding: 13px 10px;
+    border-bottom: 1px solid #edf0f5;
+    color: #334155;
+    font-size: 12px
+}
+
+.returns-table td input {
+    width: 76px;
+    padding: 8px;
+    border: 1px solid #dbe3ef;
+    border-radius: 6px
+}
+
+.returns-table td input:disabled {
+    background: #f1f5f9
+}
+
+.return-form-bottom {
+    display: flex;
+    align-items: end;
+    gap: 13px;
+    flex-wrap: wrap;
+    margin-top: 18px
+}
+
+.return-form-bottom label {
+    display: grid;
+    gap: 7px;
+    color: #475569;
+    font-size: 11px;
+    font-weight: 600
+}
+
+.return-form-bottom label:nth-child(2) {
+    flex: 1
+}
+
+.return-form-bottom strong {
+    padding: 10px 0;
+    font-size: 13px;
+    white-space: nowrap
+}
+
+.return-form-bottom>button {
+    white-space: nowrap
+}
+
+.returns-state {
+    padding: 30px 10px;
+    color: #64748b;
+    text-align: center;
+    font-size: 13px
+}
+
+.capitalize {
+    text-transform: capitalize
+}
+
+@media(max-width:1000px) {
+    .returns-sidebar {
+        width: 220px
+    }
+
+    .returns-main {
+        padding: 24px
+    }
+}
+
+@media(max-width:700px) {
+    .returns-layout {
+        flex-direction: column
+    }
+
+    .returns-sidebar {
+        width: 100%;
+        min-height: auto;
+        padding: 18px 14px
+    }
+
+    .returns-brand {
+        padding-bottom: 18px
+    }
+
+    .returns-menu-label {
+        margin-bottom: 8px
+    }
+
+    .returns-nav {
+        grid-template-columns: repeat(5, minmax(0, 1fr))
+    }
+
+    .returns-nav button {
+        padding: 10px 5px;
+        text-align: center;
+        font-size: 11px
+    }
+
+    .returns-logout {
+        margin-top: 12px
+    }
+
+    .returns-main {
+        padding: 20px 14px
+    }
+
+    .returns-header {
+        align-items: flex-start;
+        flex-direction: column
+    }
+
+    .returns-panel {
+        padding: 16px
+    }
+
+    .bill-lookup {
+        flex-direction: column
+    }
+
+    .return-form-bottom {
+        align-items: stretch;
+        flex-direction: column
+    }
+
+    .return-form-bottom label:nth-child(2) {
+        flex: initial
+    }
+
+    .return-form-bottom strong {
+        padding: 5px 0
+    }
+}
